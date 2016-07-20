@@ -10,5 +10,18 @@
 
 <p>Our Really Simple Site</p>
 
+<ul>
+    {% for todo in the_data %}
+        <p>{{ todo.description }}</p>
+    {% endfor %}
+</ul>
+
+
+
+<ul>
+    <li><a href="/login">Login</a></li>
+    <li><a href="{% url 'new_todo' %}">Create ToDo Item</a></li>
+</ul>
+
 </body>
 </html>
