@@ -25,4 +25,5 @@ urlpatterns = [
     url(r'^login', account_views.login, name='login'),
     url(r'^logout', account_views.logout, name='logout'),
     url(r'^todo/new/', todo_views.new_todo_item, name = 'new_todo'),
+    url(r'^register/$', account_views.register, name = 'register'),
 ]
