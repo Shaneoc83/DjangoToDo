@@ -1,27 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-<h2>Hello World</h2>
-
-<p>Our Really Simple Site</p>
-
+{% block content %}
 <ul>
     {% for todo in the_data %}
         <p>{{ todo.description }}</p>
     {% endfor %}
 </ul>
-
-
-
-<ul>
-    <li><a href="/login">Login</a></li>
-    <li><a href="{% url 'new_todo' %}">Create ToDo Item</a></li>
-</ul>
-
-</body>
-</html>
+{%  endblock content %}
